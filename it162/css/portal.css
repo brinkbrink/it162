@@ -1,0 +1,167 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    background-image:  url("http://www.ebrink.online/it162/images/background.jpg");
+
+}
+
+html {
+    background-color: rgb(209, 209, 209);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: rgb(29, 28, 28); 
+    background: rgb(176, 209, 209);
+}
+
+h1 {
+    font-weight: normal;
+    margin: auto;
+    background: rgb(9, 156, 156);
+    line-height: 2.5em;
+}
+
+h2 {
+    color:rgb(50, 50, 51);
+    margin-right: 20px;
+    margin-left: 20px;
+    display: block;
+    padding: 2px 40%;
+    background: rgb(9, 156, 156);
+    opacity: .8;
+}
+
+div.wrapper {
+    background-color: rgb(209, 209, 209);
+    opacity: .92;
+    overflow: auto;
+}
+
+div.wrapper img {
+    opacity: 1;
+}
+
+div.whatever {
+background: darkgoldenrod;
+
+}
+
+p {
+    color: rgb(50, 50, 51);
+    margin: 1em 1em;
+}
+
+
+h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    line-height: 1em;
+}
+
+a {
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: #391e99;
+    text-decoration: none;
+}
+
+/* font awesome icon styles */
+i.logo {
+    color:#391e99; /* a less boring color */
+    text-shadow:1px 1px #ccc; /* gives the icon a little depth */
+    font-size:1.25em; /* font awesome icons are text, so make it a bit bigger */
+    margin-left:1%; /* this keeps the icon from being squeeezed to the left */
+}
+
+
+footer {
+    background-color: rgb(9, 156, 156);
+    opacity: 1;
+    clear: both;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    div.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    img.desktop {
+        width: 50%;
+        float: left;
+        margin-right: 2em;
+    }
+    
+    img.tablet, img.phone {
+        display: none;
+    }
+    
+    p {
+        margin: 1em;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    div.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    img.tablet {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+    img.desktop, img.phone {
+        display: none;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    div.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    img.phone {
+        width: 100%;
+    }
+    
+    img.desktop, img.tablet {
+        display: none;
+    }
+}
+
