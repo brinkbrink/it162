@@ -1,0 +1,169 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+   background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+h1 {
+    background-color: #fff;
+    padding: 10% 10%;
+    font-family: serif;
+    font-size: 3.5em;
+    line-height: 1;
+}
+
+
+h2{
+    font-family: initial;
+    font-size: 32px;
+    padding: 15px 3%;
+    color: #240d0d;
+    background-color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+  }
+
+  .grid-container-about {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+
+
+
+  .grid-item-3 {
+    background-color: rgba(209,209,209,.92);
+    margin: auto;
+    padding: 5px 5px;
+}
+
+
+
+  .grid-item-4 {
+    background-color: rgba(209,209,209,.92);
+    margin: 20px 20px 20px 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.grid-item-5 {
+    grid-area: 1 / 1 / 1 / 2;
+}
+.grid-item-5 img {
+    max-width: 100%;
+} 
+
+.grid-item-6 {
+    background-color: rgba(209,209,209,.92);
+    margin: 20px 20px 20px 20px;
+    grid-area: 1 / 2 / 1 / 4;
+}
+
+.grid-item-7 {
+    background-color: rgba(209,209,209,.92);
+    margin: 20px 20px 20px 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.grid-item-8 img {
+    max-width: 100%;
+}
+.grid-item-9 {
+    background-color: rgba(209,209,209,.92);
+    padding: 4px 25px 7px 4px;
+    margin: 20px 20px 20px 20px;
+}
+
+.grid-item-10, .grid-item-11, .grid-item-12 {
+    background-color: rgba(209,209,209,.92);
+    margin: 20px 20px 20px 20px;
+    padding: 15px 15px;
+}
+
+p {
+    padding: 20px;
+}
+
+div.wrapper {
+    background-image: url("https://www.ebrink.online/it162/fp/images/beans.jpg");
+    padding: 20px;
+    
+}
+
+::selection {
+    color: rgb(29, 28, 28); 
+    background: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: rgba(209,209,209,.92);
+    clear: both;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (max-width:1200px) {
+
+    .grid-container-about {
+        display: block;
+      }
+
+    .grid-item-3 {
+        display: none;
+    }
+
+    .grid-item-4 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+/* MOBILE */
+@media all and (max-width: 850px) {
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
+/* PHONE */
+
+@media all and (max-width: 500px) {
+
+    h2 {
+        font-size: 32px;
+        padding: 5px 10%;
+    }
+    
+    div.wrapper {
+        width: 100%;
+    }
+
+    .grid-item-4 {
+        font-size: 12px;
+    }
+
+    .grid-item-9 {
+        padding: 3px 10px 4px 3p;
+        margin: 0px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

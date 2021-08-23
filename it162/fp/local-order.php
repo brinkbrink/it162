@@ -1,0 +1,3 @@
+<?php include 'includes/header.php';?>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://docs.google.com/forms/d/e/1FAIpQLScVovOHWtx7cSAGLh9wFVEy8shG6jAnhXZTzABaz2cgMpwuAQ/viewform' style='border:0'></iframe></div>
+<?php include 'includes/footer.php';?>
